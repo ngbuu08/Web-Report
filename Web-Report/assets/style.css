@@ -1,103 +1,3 @@
-@font-face {
-    font-family: playfair;
-    src: url('Font/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
-}
-
-/*-----------------------------------------------------------------*/
-
-@media only screen and (max-width: 1024px) {
-#nav li { 
-    display: none; 
-}
-
-#leftmenu {
-    width: 100%;
-    justify-content: space-between;
-    margin-left: 0;
-    padding-right: 7px;
-    box-sizing: border-box;
-}
-
-#sig img {
-    transform: translate(5vw, -4vh) !important;
-}
-
-}
-
-/*-----------------------------------------------------------------*/
-@media only screen and (max-width: 730px) {
-    #text {
-    width: 90% !important;
-    padding: 0 5vw 0 5vw !important;
-    margin: 0 auto 0 auto !important;
-}
-
-#introduce {
-    font-size: 1.1rem !important;
-    text-align: justify;
-}
-
-#sig img {
-    transform: translate(5vw, -4vh) !important;
-}
-
-#about {
-    flex-direction: column;
-}
-
-#pic {
-    padding: 0 0 20px 0 !important;
-    margin: 0 !important;
-    width: 100% !important;
-}
-}
-
-/*-----------------------------------------------------------------*/
-@media only screen and (max-width: 480px) {
-body {
-    background-color: rgb(0, 0, 0);
-}
-
-#nav li {
-    display: none;
-}
-
-#slogan {
-    width: 90vw !important;
-    font-size: 2rem !important;
-}
-
-#welcome {
-    width: 90vw !important;
-}
-
-#text {
-    width: 90% !important;
-    padding: 8vw 5vw 0 5vw !important;
-    margin: 0 auto 0 auto !important;
-}
-
-#introduce {
-    font-size: 1.1rem !important;
-    text-align: justify;
-}
-
-#sig img {
-    transform: translate(5vw, -4vh) !important;
-}
-
-#about {
-    flex-direction: column;
-}
-
-#pic {
-    padding: 0 0 30px 0 !important;
-    margin: 0 auto 0 auto !important;
-    width: 90% !important;
-    
-}
-
-}
 
 /*-----------------------------------------------------------------*/
 html {
@@ -125,7 +25,7 @@ body {
     height: 5vh;
     width: 100%;
     display: flex;
-    background-color: #c9c9c9;
+    background-color: #dfdfdf;
    backdrop-filter: blur(150px);
     align-items: center;
     justify-content: space-between;
@@ -149,8 +49,8 @@ body {
     width: 25%;
     position: static;
     font-family: 'Montserrat';
-    font-weight: 900;
-    color: #000000;
+    font-weight: 800;
+    color: #464646;
     justify-content: right;
     display: flex;
     margin-right: 10px;
@@ -163,7 +63,7 @@ body {
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 #nav li {
@@ -188,12 +88,12 @@ body {
 #nav li:hover a {
     background-color: #91919171 ;
     color: #000000;
-    height: 35px;
+    height: 5vh;
     width: 73px;
     margin: auto auto auto auto;
     align-items: center;
     justify-content: center;
-    border-radius: 99999px;
+    border-radius: 0px;
     box-shadow: 0 0 30px #adadad44  ;
     transition: 
         background-color 0.4s ease,
@@ -220,7 +120,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;            
-    height: 120vh;
+    height: 100vh;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -228,18 +128,16 @@ body {
 
 #pad {
     width: 100%;
-    height: 5vh;
+    height: 10vh;
 }
 
 #text1 {
     font-family: "Kanit";
-    background: linear-gradient(to left, rgb(255, 0, 0), rgb(59, 183, 255));
-    background-clip: text;
-    font-size: 40px;
-    font-weight: 800;
+    font-size: 50px;
+    font-weight: 700;
     padding-left: 10vw;
     margin: 0;
-    color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 #text2 {
@@ -256,7 +154,7 @@ body {
     height: auto;
     align-items: center;
     justify-content: center;
-    margin: 50px auto 0 auto;
+    margin: 3vh auto 0 auto;
     border-radius: 10px;
 }
 
@@ -266,15 +164,15 @@ body {
 
 #wall {
     width: 100vw;
-    height: 3vh;
+    height: 1.5vh;
     background: repeating-linear-gradient(
         45deg,
-        #000000,        
-        #000000 2px,   
-        #333333 5px,   
-        #000000 6px  
+        #d6d6d6,        
+        #bdbdbd 2px,   
+        #ffffff 5px,   
+        #d6d6d6 6px  
     );
-    border: 1px solid #444;
+    border: 1px solid #b6b6b6;
 }
 
 /*-----------------------------------------------------------------*/
@@ -282,22 +180,135 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;            
-    height: auto;
-    background-color: rgb(0, 0, 0);
-    justify-content: none;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+#pad {
+    width: 100vw;
+    height: 10vh;
+}
+
+#pad {
+    width: 100vw;
+    height: 5vh;
+}
+
+#haichu {
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw 0 10vw;
+    margin: 0;
     display: flex;
 }
 
+#tieude {
+    font-family: "Kanit";
+    font-size: 50px;
+    font-weight: 700;
+    padding-left: 10vw;
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
 
+#tenshop {
+    font-family: "Porsche Next";
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+}
 
+#slogan {
+    font-family: "Porsche Next";
+    color: black;
+    font-size: 23px;
+    font-weight: 550;
+    margin: 0;
+}
+
+#noidung {
+    list-style: none;
+    font-family: "Porsche Next";
+    color: black;
+    font-size: 19px;
+    font-weight: 100;
+    margin: 0;
+    padding: 5vh 10vw 0 10vw;
+    text-align: justify;
+}
+
+#li1 {
+    padding-bottom: 3vh;
+}
 /*-----------------------------------------------------------------*/
 
 #product {
     margin: 0;
     padding: 0;
     width: 100vw;            
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+}
+
+#products {
+    font-family: "Kanit";
+    font-size: 50px;
+    font-weight: 700;
+    padding-left: 10vw;
+    padding-bottom: 2vh;
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+#cacsanpham {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mot {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+
+#hai li img {
+    width: 18vw;
+    height: 18vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#hai {
+    list-style: none;
+}
+
+#hai li {
+    font-family: "Porsche Next";
+    margin: 0;
+}
+
+#gia {
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 1vw;
+    color: #464646;
+}
+
+#tenxe {
+    padding-left: 1vw;
+    font-size: 20px;
+}
+
+#hangdau {
+    justify-content: center;
 }
 
 /*-----------------------------------------------------------------*/
@@ -306,6 +317,121 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;            
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+#lienhetuvan {
+    font-family: "Kanit";
+    font-size: 50px;
+    font-weight: 700;
+    padding-left: 10vw;
+    padding-bottom: 2vh;
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+.consultation-form {
+    background: white;
+    padding: 40px;
+    width: 400px;        
+    border-radius: 15px;  
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    font-family: "Porsche Next", sans-serif;
+    align-items: center;
+}
+
+
+.consultation-form h2 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.consultation-form p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 14px;
+}
+
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    font-family: "Porsche Next", sans-serif;
+}
+
+
+.input-group input:focus {
+    border-color: #000;
+    outline: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Porsche Next", sans-serif;
+}
+
+#footer {
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    padding: 0 15vw 0 15vw;
+}
+
+#credit {
+    background: white;
+    padding: 40px;
+    width: 400px;        
+    border-radius: 15px;  
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    font-family: "Porsche Next", sans-serif;
+    align-items: center;
+    list-style: none;
+}
+#tenthanhvien {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+}
+
+#nhom1 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#banquyen {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+    color: #949494;
 }
