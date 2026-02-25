@@ -1,4 +1,190 @@
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0 !important;
+        padding: 0;
+    }
 
+    #header {
+        height: 60px;
+    }
+
+    #tasbar {
+        justify-content: center !important;
+    }
+
+    #nav {
+        display: none !important;
+    }
+
+    #name {
+        width: 100%;
+        justify-content: center !important;
+        margin: 0;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #text1, #products, #lienhetuvan {
+        font-size: 32px;
+        padding-left: 5vw;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center !important;
+        padding: 0 !important;
+    }
+
+    #tieude {
+        display: flex;
+        justify-content: center !important;
+        padding: 0 !important;
+    }
+
+    #text2 {
+        font-size: 18px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        line-height: 1.4;
+    }
+
+    #startpic {
+        content: url("/phone.jpg");
+        width: 90vw;
+        height: auto;
+        margin: 20px auto 20px auto !important;
+        display: block;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+    }
+
+    #haichu {
+        padding: 0 5vw;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #tenshop {
+        font-size: 22px;
+    }
+
+    #noidung {
+        padding: 3vh 5vw 0 5vw;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #cacsanpham {
+        width: 100vw;
+        padding: 0 5vw;
+        box-sizing: border-box;
+        flex-direction: row !important;
+
+        scroll-margin-top: 100px;
+}
+    #hangdau, #hangsau {
+        width: 100%;
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    #mot {
+        display: flex;
+        flex-direction: column !important;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #mot > li {
+        width: 100%;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #hai {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #hai li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #hai li img {
+        width: 90vw;
+        height: auto;
+        max-height: 250px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        margin-bottom: 15px;
+    }
+
+    #tenxe {
+        padding-left: 0;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    #gia {
+        padding-left: 0;
+        font-size: 16px;
+    }
+
+    #footer {
+        flex-direction: column;
+        padding: 0 5vw;
+        gap: 30px;
+    }
+
+    #footer li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .consultation-form, #credit {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3) !important;  
+        
+    }
+
+    .consultation-form h2 {
+        font-size: 22px;
+    }
+
+    #nhom1 {
+        font-size: 18px;
+    }
+
+    #tenthanhvien {
+        font-size: 16px;
+    }
+
+    #banquyen {
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .modal-content {
+        width: 85%;
+        padding: 25px 20px;
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3); 
+    }
+}
 /*-----------------------------------------------------------------*/
 html {
     scroll-behavior: smooth;
@@ -26,7 +212,7 @@ body {
     width: 100%;
     display: flex;
     background-color: #dfdfdf;
-   backdrop-filter: blur(150px);
+    backdrop-filter: blur(150px);
     align-items: center;
     justify-content: space-between;
 }
@@ -104,12 +290,12 @@ body {
 #nav li:active a {
     background-color: #9b9b9b71 ;
     color: #ffffff;
-    height: 35px;
+    height: 45px;
     width: 73px;
     margin: auto auto auto auto;
     align-items: center;
     justify-content: center;
-    border-radius: 99999px;
+    
     box-shadow: 0 0 30px #adadad44  ;
     
 }
@@ -150,7 +336,7 @@ body {
 }
 
 #startpic {
-    width: 90vw;
+    width: 85vw;
     height: auto;
     align-items: center;
     justify-content: center;
@@ -268,6 +454,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-margin-top: 100px;
 }
 
 #mot {
@@ -284,6 +471,18 @@ body {
     object-position: center;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1; 
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                box-shadow 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#hai li:hover img {
+    transform: translateY(-12px) scale(1.05); 
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+    z-index: 100;
 }
 
 #hai {
@@ -434,4 +633,85 @@ body {
     font-weight: 600;
     text-align: justify;
     color: #949494;
+}
+
+.modal-overlay { 
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.modal-content { 
+    font-family: "Kanit";
+    backdrop-filter: blur(15px);
+    background-color: #3a3a3a86; 
+    margin: 15% auto; 
+    padding: 30px; 
+    border-radius: 25px; 
+    width: 80%; 
+    max-width: 400px; 
+    text-align: center; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+    position: relative; 
+    animation: fadeIn 0.3s ease-out; 
+}
+
+@keyframes fadeIn { 
+    from { 
+        opacity: 0; 
+        transform: translateY(-20px); 
+    } 
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+}
+
+.modal-content p { 
+    color: #ffffff; 
+}
+
+.modal-content h2 { 
+    color: #ffffff; 
+    margin-top: 0; 
+    font-weight: 800;
+}
+.close-btn { 
+    color: #aaa; 
+    float: right; 
+    font-size: 28px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    position: absolute; 
+    top: 10px; 
+    right: 15px;
+}
+
+.close-btn:hover { 
+    color: black; 
+}
+
+.btn-ok { 
+    font-family: "Kanit";
+    background-color: #cccccc; 
+    color: rgb(0, 0, 0); 
+    padding: 10px 25px; 
+    margin-top: 20px; 
+    border: none; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: 
+        background-color 0.4s ease,
+        color 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+.btn-ok:hover { 
+    background-color: #a8a8a8; 
 }
